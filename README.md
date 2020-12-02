@@ -1,2 +1,2 @@
 # c-cpp-utils
-Repo for snippets and utils written on C/CPP
+Repo for snippets and utils written in C/CPP
