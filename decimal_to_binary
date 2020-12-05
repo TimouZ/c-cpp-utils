@@ -1,0 +1,31 @@
+// A simple recursive algorithm for converting a number from decimal to binary
+#include <iostream>
+
+using namespace std;
+
+void convert(int n);
+
+int main()
+{
+    int number = 0;
+    cout << "Enter number to convert (decimal): ";
+    cin >> number;
+    cout << "Converted number (binary): ";
+
+    convert(number);
+    cout << endl;
+
+    return 0;
+}
+
+void convert(int n)
+{
+    int temp = 0;
+    temp = n % 2;
+
+    if (n >= 2){
+        convert(n / 2);
+    }
+
+    cout << temp;
+}
